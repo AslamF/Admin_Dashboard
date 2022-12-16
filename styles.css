@@ -8,7 +8,7 @@ html{
 body{
     min-height: 100%;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: .6fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 .header{
@@ -45,10 +45,27 @@ body{
     border-radius: 50%
 }
 .pfp2{
-    height:60px;
-    width: 60px;
+    height:40px;
+    width: 40px;
     border-radius: 50%;
 }
+input{
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+}
+button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 75px;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
 input{
     width: 100%;
     border-radius: 15px;
@@ -70,26 +87,78 @@ button{
     background-color: beige;
     grid-row: 1/3;
     grid-column: 1/2;
-    display: flex;
-    flex-direction: column;
-    gap: 120px;
+    display: grid;
+    grid-template-rows: .4fr 1fr 3fr;
+    padding-left: 15px;
     
-    
 }
-ul{
-    padding-left: 50px;
-    list-style: none;
+.group{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
 }
-li{
-    background-color: orange;
-}
+
 .list{
-    height: 25px;
+    height: 20px;
+   
+}
+.topSideBar, .middleSideBar{
+    display: grid;
+}
+
+.bottomSideBar{
+    padding-top: 50px;
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
 }
 
 
 .main{
-    background-color: blueviolet;
     grid-row: 2/3;
     grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    column-gap:20px;
+    padding: 50px 25px 50px 25px;
+    
+}
+
+.left-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+#rightDiv{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+
+}
+.project-card{
+    border: solid 2px black;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+p{
+    
+    
+   
+}
+.icons{
+    gap: 15px;
+    
+}
+
+
+.cardIcons{
+    height: 20px;
+}
+
+
+
+.announcement-card, .trending-card{
+    border: solid 2px black;
 }
